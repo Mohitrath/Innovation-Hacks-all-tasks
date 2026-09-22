@@ -1,1 +1,0 @@
-import {redirect} from 'next/navigation';import {getCurrentUser} from '@/lib/auth';import Dashboard from '@/components/Dashboard';export default async function Page(){const u=await getCurrentUser();if(!u)redirect('/login');return <Dashboard user={u}/>}
