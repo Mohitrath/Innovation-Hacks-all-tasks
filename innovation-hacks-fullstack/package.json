@@ -19,7 +19,7 @@
     "openai": "^5.16.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "zod": "^4.1.5",
+    "zod": "^3.25.76",
     "tailwindcss": "^4.1.13"
   },
   "devDependencies": {
