@@ -1,5 +1,11 @@
-generator client { provider = "prisma-client-js" }
-datasource db { provider = "postgresql" url = env("DATABASE_URL") }
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
 
 model User {
   id        String    @id @default(cuid())
@@ -23,8 +29,18 @@ model Project {
   tasks       Task[]
 }
 
-enum TaskStatus { TODO IN_PROGRESS DONE }
-enum Priority { LOW MEDIUM HIGH URGENT }
+enum TaskStatus {
+  TODO
+  IN_PROGRESS
+  DONE
+}
+
+enum Priority {
+  LOW
+  MEDIUM
+  HIGH
+  URGENT
+}
 
 model Task {
   id          String     @id @default(cuid())
