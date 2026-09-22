@@ -1,0 +1,14 @@
+{
+  "name": "innovation-hacks-all-tasks",
+  "private": true,
+  "workspaces": [
+    "innovation-hacks-fullstack"
+  ],
+  "scripts": {
+    "vercel-build": "npm run build --workspace=innovation-hacks-project-manager",
+    "build": "npm run build --workspace=innovation-hacks-project-manager"
+  },
+  "dependencies": {
+    "next": "^15.5.3"
+  }
+}
